@@ -17,6 +17,8 @@
 \RequirePackage{lineno}
 \RequirePackage{siunitx}
 \RequirePackage{booktabs}
+\RequirePackage{multirow}
+\RequirePackage{pdflscape}
 \RequirePackage[version=4]{mhchem}
 \RequirePackage[
     labelfont=bf,
@@ -29,6 +31,7 @@
     citecolor=black,
     linkcolor=black
 ]{hyperref}
+\RequirePackage{cleveref}
 
 % Configuration line modulo
 \modulolinenumbers[1]
@@ -66,6 +69,7 @@
 \newcommand{\figref}[1]{\autoref{fig:#1}}
 \newcommand{\tabref}[1]{\autoref{tab:#1}}
 \renewcommand{\eqref}[1]{\autoref{eq:#1}}
+\newcommand{\sref}[1]{\cref{sec:#1}}
 
 \newcommand{\eg}{\emph{e.g.,}~}
 \newcommand{\ie}{\emph{i.e.,}~}
