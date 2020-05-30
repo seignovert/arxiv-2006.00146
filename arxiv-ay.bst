@@ -788,7 +788,7 @@ FUNCTION {book}
     }
   if$
   new.block
-  format.btitle urllink "title" output.check
+  format.btitle doilink "title" output.check
   crossref missing$
     { format.bvolume output
       new.block
@@ -837,7 +837,7 @@ FUNCTION {inbook}
     }
   if$
   new.block
-  format.btitle urllink "title" output.check
+  format.btitle doilink "title" output.check
   crossref missing$
     { format.bvolume output
       format.chapter.pages "chapter and pages" output.check
@@ -864,7 +864,7 @@ FUNCTION {incollection}
   format.authors "author" output.check
   author format.key output
   new.block
-  format.title urllink "title" output.check
+  format.title doilink "title" output.check
   new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
