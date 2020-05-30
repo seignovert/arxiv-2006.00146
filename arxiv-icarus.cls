@@ -19,6 +19,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{multirow}
 \RequirePackage{pdflscape}
+\RequirePackage{subcaption}
 \RequirePackage[version=4]{mhchem}
 \RequirePackage[
     labelfont=bf,
@@ -37,7 +38,9 @@
 \modulolinenumbers[1]
 
 % Caption configuration
-\captionsetup[figure]{name=Fig. ,labelsep=period,aboveskip=5pt,belowskip=-10pt}
+\captionsetup[figure]{name=Fig. ,labelsep=period,aboveskip=5pt,belowskip=-5pt, textfont=it}
+\captionsetup[sub]{position=top,justification=centering}
+\captionsetup[table]{name=Tab. ,labelsep=period,aboveskip=10pt,belowskip=-5pt, textfont=it}
 
 % SIunitx configuration
 \sisetup{group-separator = {,}}
